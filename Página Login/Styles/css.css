@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0 0 0 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.conteiner {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.esquerda {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../Imagens/music2.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 4px 4px 4px #b3b3b3;
+    transition: background-position 1s;
+}
+
+.esquerda-conteudo h2 {
+    margin: 10px;
+    font-size: 42px;
+}
+
+.esquerda-conteudo span {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100vh;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.direita-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 70%;
+}
+
+.direita-conteudo img {
+    align-self: center;
+    margin-bottom: 35px;
+}
+
+.direita-conteudo h3 {
+    align-self: flex-start;
+}
+.direita-conteudo a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.direita-conteudo a:hover {
+    color: #0B9DCA;
+}
+
+.direita-conteudo form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0b9dca 0%, #00b7bc 0%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #b3b3b3;
+}
+
+.direita-subconteudo {
+    color: #626462;
+    border-bottom: solid 1px #626462;
+    align-items: stretch;
+}
+
+.direita-subconteudo div {
+    position: relative;
+    width: 150px;
+    top: 10px;
+    left: calc(50% - 75px);
+    text-align: center;
+    background-color: #fff;
+}
+
+.direita-extra {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+#link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: solid 1px #eaeaea;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#google-icon {
+    background-image: url(../Imagens/1534129544.svg);
+    width: 40px;
+    height: 40px;
+    padding-right: 2.5px;
+}
+
+.direita-nova {
+    align-self: center;
+    margin-top: 5px;
+}
+
+.direita-nova a {
+    color: #0B9DCA;
+}
+
+.direita-nova a:hover {
+    color: #00B7BC;
+}
+
+@keyframes slide {
+    0%{
+        background-position: 0 0;
+    }
+    
+    100%{
+        background-position: 100% 0;
+    }
+}
+
+.esquerda {
+    animation: slide 15s linear alternate-reverse;
+    animation-iteration-count:  infinite;
+}
